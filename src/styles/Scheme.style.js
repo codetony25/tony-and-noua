@@ -12,11 +12,15 @@ export const headerColor = {
 };
 
 export const homeColor = {
+  textTheme: primaryColor.roses,
+  textDescription: primaryColor.happy,
   textHeaderHero: primaryColor.white,
   textHero: primaryColor.white,
   textShadow: primaryColor.black,
   bgIconHero: primaryColor.roses,
-  bgHero: primaryColor.ebony
+  bgIconCouple: primaryColor.black,
+  bgHero: primaryColor.ebony,
+  iconCouple: primaryColor.shaft
 };
 
 export const footerColor = {

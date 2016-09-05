@@ -3,6 +3,9 @@ import { Style } from 'jassy';
 
 import CoupleState from './Couple.state'
 
+import coupleFirstImg from '../assets/images/couple-first.png';
+import coupleSecondImg from '../assets/images/couple-second.png';
+
 class Couple extends React.Component {
 
   static displayName = 'Couple';
@@ -14,15 +17,25 @@ class Couple extends React.Component {
         <div className="couple-background" />
         <div className="couple-wrapper">
           <div className="couple-first">
-            <h3>Tony Nguyen</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet assumenda, at beatae doloremque facere id impedit mollitia nisi nobis nostrum nulla odit perspiciatis possimus quasi quis, repellat voluptate voluptatibus.</p>
+            <div className="couple-description">
+              <h3>Tony Nguyen</h3>
+              <p>Lorem Ipsumimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
+            </div>
+            <div className="couple-first-image">
+              <img src={coupleFirstImg} alt="" />
+            </div>
           </div>
-          <div className="couple-image">
-
+          <div className="couple-divider">
+            <i className="fa fa-heart" />
           </div>
           <div className="couple-second">
-            <h3>Noua Vue</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex hic iure iusto, maiores necessitatibus obcaecati quo reprehenderit sed soluta vitae. A at aut enim facere illo ipsum provident sed velit.</p>
+            <div className="couple-second-image">
+              <img src={coupleSecondImg} alt="" />
+            </div>
+            <div className="couple-description">
+              <h3>Noua Vue</h3>
+              <p>Lorem Ipsumimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
+            </div>
           </div>
         </div>
       </div>
