@@ -80,8 +80,8 @@ app.get('*', async (request, response, next) => {
     let css = new Set();
     let statusCode = 200;
     const data = {
-      title: '',
-      description: '',
+      title: 'Tony and Noua\'s Wedding Event',
+      description: 'RSVP to join our wedding event with Tony and Noua!',
       style: '',
       script: assets.main.js,
       children: ''

@@ -7,7 +7,11 @@ export const primaryColor = {
   hazzy: '#edf2f5', // light gray backgrounds
   gravy: '#3e3e3e', // button second bg
   looks: '#8a8a8a', // text on dark bg
+  stone: '#9a9a9a', // text on dark bg
   young: '#50565a', // text header on dark bg
+  skill: '#c6c6c6', // icons
+  bears: '#dadada', // icon backgrounds on dark
+  close: '#2d2d2d', // blackish
   black: '#000000' // black
 };
 

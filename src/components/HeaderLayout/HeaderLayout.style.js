@@ -1,5 +1,6 @@
 import { headerColor } from '../../styles/Scheme.style';
 import { font, mediaQuery } from '../../styles/Variables.style';
+import color from '../../styles/Helpers.style';
 
 const HeaderLayoutStyle = (options) => {
 
@@ -32,7 +33,12 @@ const HeaderLayoutStyle = (options) => {
         alignItems: 'center',
         justifyContent: 'space-between',
         width: '100%',
-        padding: '15px 40px',
+        padding: '15px',
+        background: headerColor.bg,
+
+        [mediaQuery.medium]: {
+          padding: '15px 40px'
+        },
 
         '.header-logo': {
           'h3': {
@@ -44,7 +50,7 @@ const HeaderLayoutStyle = (options) => {
           }
         },
 
-        'ul': {
+        '.header-navigation': {
           margin: 0,
           display: 'none',
 
@@ -86,6 +92,42 @@ const HeaderLayoutStyle = (options) => {
 
           [mediaQuery.large]: {
             display: 'none'
+          }
+        },
+
+        '.mobile-navigation': {
+          transition: '.4s',
+          position: 'absolute',
+          background: headerColor.bg,
+          width: '100%',
+          top: 0,
+          left: 0,
+          zIndex: -50,
+          fontSize: 32,
+          transform: options.isMobileNavigationTapped ? 'translateY(21%)' : 'translateY(-100%)',
+          boxShadow: '15px 15px 45px -20px rgba(0,0,0,0.75)',
+
+          [mediaQuery.large]: {
+            display: 'none'
+          },
+
+          'a': {
+            padding: 15,
+            borderTop: `1px solid ${headerColor.border}`,
+            background: headerColor.bg,
+            display: 'block',
+            transition: '.3s',
+            color: headerColor.link,
+
+            ':hover': {
+              background: color.darken(headerColor.bg, 5),
+              color: headerColor.linkHover
+            },
+
+            ':active': {
+              background: color.darken(headerColor.bg, 5),
+              color: headerColor.linkHover
+            }
           }
         }
       }

@@ -1,7 +1,6 @@
-import { homeColor } from '../../../styles/Scheme.style';
-import { font, mediaQuery } from '../../../styles/Variables.style';
-import proposalImg from '../assets/images/proposal.png';
-import flowersImg from '../assets/images/flowers-bg.png';
+import { homeColor } from '../../../../styles/Scheme.style';
+import { font, mediaQuery } from '../../../../styles/Variables.style';
+import proposalImg from '../../assets/images/proposal.png';
 
 const HeroStyle = () => {
   return {

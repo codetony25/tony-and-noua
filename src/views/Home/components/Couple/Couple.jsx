@@ -1,10 +1,11 @@
 import React from 'react';
 import { Style } from 'jassy';
+import { Element } from 'react-scroll';
 
 import CoupleState from './Couple.state'
 
-import coupleFirstImg from '../assets/images/couple-first.png';
-import coupleSecondImg from '../assets/images/couple-second.png';
+import coupleFirstImg from '../../assets/images/couple-first.png';
+import coupleSecondImg from '../../assets/images/couple-second.png';
 
 class Couple extends React.Component {
 
@@ -12,7 +13,7 @@ class Couple extends React.Component {
 
   render () {
     return(
-      <div className="couple-container">
+      <Element name="couple" className="couple-container">
         <Style rules={CoupleState.styles} />
         <div className="couple-background" />
         <div className="couple-wrapper">
@@ -38,7 +39,28 @@ class Couple extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+        <div className="couple-countdown">
+          <div className="countdown-box">
+            <h3>34</h3>
+            <p>Months</p>
+          </div>
+          <div className="countdown-box">
+            <h3>09</h3>
+            <p>Days</p>
+          </div>
+          <div className="countdown-box">
+            <h3>34</h3>
+            <p>Hours</p>
+          </div>
+          <div className="countdown-box">
+            <h3>08</h3>
+            <p>Minutes</p>
+          </div>
+        </div>
+        <div className="couple-rsvp">
+          <button className="btn btn-primary btn-rounded">Save The Date</button>
+        </div>
+      </Element>
     );
   }
 

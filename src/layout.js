@@ -3,6 +3,7 @@ import emptyFunction from 'fbjs/lib/emptyFunction';
 import { Style } from 'jassy';
 
 import HeaderLayout from './components/HeaderLayout';
+import FooterLayout from './components/FooterLayout';
 import GlobalState from './stores/Global.state';
 
 class Layout extends React.Component {
@@ -33,11 +34,12 @@ class Layout extends React.Component {
       return (
         <div className="main-container">
           <Style rules={GlobalState.styles} />
-          <HeaderLayout />
-          <div className="main-right-container">
+          <div className="main-container">
+            <HeaderLayout />
             <div className="view-container">
               {this.props.children}
             </div>
+            <FooterLayout />
           </div>
         </div>
       );

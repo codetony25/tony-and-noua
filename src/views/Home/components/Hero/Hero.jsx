@@ -1,26 +1,19 @@
 import React from 'react';
 import { Style } from 'jassy';
+import { Element } from 'react-scroll';
 
 import HeroState from './Hero.state'
-import flowerLeftImg from '../assets/images/flower-left.png';
-import flowerRightImg from '../assets/images/flower-right.png';
-import flowerDivider from '../assets/images/flower-divider.png';
+import flowerLeftImg from '../../assets/images/flower-left.png';
+import flowerRightImg from '../../assets/images/flower-right.png';
+import flowerDivider from '../../assets/images/flower-divider.png';
 
 class Hero extends React.Component {
 
   static displayName = 'Hero';
 
-  constructor (props) {
-    super(props);
-  }
-
-  // componentDidMount () {
-  //   HeroState.window = window;
-  // }
-
   render () {
     return(
-      <div className="hero-container">
+      <Element name="home" className="hero-container">
         <Style rules={HeroState.styles} />
         <div className="hero-overlay" />
         <div className="hero-main">
@@ -41,7 +34,7 @@ class Hero extends React.Component {
             <img src={flowerDivider} alt="" />
           </div>
         </div>
-      </div>
+      </Element>
     );
   }
 
