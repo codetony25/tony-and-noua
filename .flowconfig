@@ -1,0 +1,7 @@
+[ignore]
+.*/dist
+.*/config
+.*/node_modules
+.*/gulpfile.js
+
+[include]
