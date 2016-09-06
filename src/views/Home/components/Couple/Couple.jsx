@@ -37,7 +37,7 @@ class Couple extends React.Component {
             </div>
             <div className="couple-description">
               <h3>Noua Vue</h3>
-              <p>Lorem Ipsumimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
+              <p>Lorem Ipsuimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
             </div>
           </div>
         </div>
