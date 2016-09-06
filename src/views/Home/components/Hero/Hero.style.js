@@ -32,7 +32,9 @@ const HeroStyle = () => {
         width: '100%',
         height: '100%',
         background: homeColor.bgHero,
-        opacity: 0.4
+        opacity: 0.4,
+        left: 0,
+        top: 0
       },
 
       '.hero-main': {
