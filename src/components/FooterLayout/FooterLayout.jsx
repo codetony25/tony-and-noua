@@ -32,7 +32,7 @@ class FooterLayout extends React.Component {
           <p>
             <span>626-552-2609</span>
             <span>|</span>
-            <span>626-443-4732</span>
+            <span>714-318-3971</span>
           </p>
         </div>
         <div className="footer-social">

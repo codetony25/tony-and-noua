@@ -13,6 +13,10 @@ const CoupleStyle = () => {
       margin: '0 auto',
       textAlign: 'center',
 
+      [mediaQuery.small]: {
+        flexDirection: 'row',
+      },
+
       'img': {
         height: 150,
         borderRadius: '50%'
@@ -56,6 +60,7 @@ const CoupleStyle = () => {
 
       '.couple-first': {
         mixin: coupleFirstAndSecond(),
+        flexDirection: 'column-reverse',
 
         [mediaQuery.large]: {
           textAlign: 'right'
@@ -72,6 +77,7 @@ const CoupleStyle = () => {
 
       '.couple-second': {
         mixin: coupleFirstAndSecond(),
+        flexDirection: 'column',
 
         [mediaQuery.large]: {
           textAlign: 'left'
