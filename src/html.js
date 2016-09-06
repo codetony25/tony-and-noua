@@ -23,7 +23,7 @@ const Html = ({ title, description, style, script, children }) => {
         <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link
-          href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Droid+Serif:400,700|Roboto:400,700"
+          href="//fonts.googleapis.com/css?family=Dancing+Script:400,700|Droid+Serif:400,700|Roboto:400,700"
           rel="stylesheet"
         />
         <link rel="stylesheet" href="/assets/css/linearicons.css" />
