@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from './layout';
 
 // Child routes
-import home from './views/home';
+import home from './views/Home';
 import error from './views/error';
 
 export default {
