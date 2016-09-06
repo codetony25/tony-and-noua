@@ -92,7 +92,7 @@ export default async function start () {
         if (!error) {
           const handleBroswerSync = Browsersync.create();
           handleBroswerSync.init({
-            ...(config.__PROD__ === false ? {} : { notify: false, ui: false }),
+            ...(config.__PROD__ ? {} : { notify: false, ui: false }),
 
             proxy: {
               target: host,
