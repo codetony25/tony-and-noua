@@ -90,6 +90,10 @@ class HeaderLayout extends React.Component {
                 + RSVP
               </Link>
             </li>
+            <li
+              className="mobile-overlay"
+              onClick={HeaderLayoutState.onMobileOverlayClick}
+            />
           </ul>
         </nav>
       </div>

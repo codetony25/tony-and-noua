@@ -33,6 +33,7 @@ const HeaderLayoutStyle = (options) => {
         alignItems: 'center',
         justifyContent: 'space-between',
         width: '100%',
+        borderRadius: options.isScrollHeightReached ? 0 : 3,
         padding: '15px',
         background: headerColor.bg,
 
@@ -128,6 +129,14 @@ const HeaderLayoutStyle = (options) => {
               background: color.darken(headerColor.bg, 5),
               color: headerColor.linkHover
             }
+          },
+
+          '.mobile-overlay': {
+            display: options.isMobileNavigationTapped ? 'block' : 'none',
+            height: '100vh',
+            width: '100%',
+            position: 'absolute',
+            background: options.isMobileNavigationTapped ? color.rgba('#000', .4) : 'transparent'
           }
         }
       }

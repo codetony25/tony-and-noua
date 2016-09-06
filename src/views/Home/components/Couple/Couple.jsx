@@ -1,12 +1,14 @@
 import React from 'react';
 import { Style } from 'jassy';
 import { Element } from 'react-scroll';
+import { observer } from 'mobx-react';
 
 import CoupleState from './Couple.state'
 
 import coupleFirstImg from '../../assets/images/couple-first.png';
 import coupleSecondImg from '../../assets/images/couple-second.png';
 
+@observer
 class Couple extends React.Component {
 
   static displayName = 'Couple';
@@ -41,20 +43,20 @@ class Couple extends React.Component {
         </div>
         <div className="couple-countdown">
           <div className="countdown-box">
-            <h3>34</h3>
-            <p>Months</p>
-          </div>
-          <div className="countdown-box">
-            <h3>09</h3>
+            <h3>{CoupleState.days}</h3>
             <p>Days</p>
           </div>
           <div className="countdown-box">
-            <h3>34</h3>
+            <h3>{CoupleState.hours}</h3>
             <p>Hours</p>
           </div>
           <div className="countdown-box">
-            <h3>08</h3>
+            <h3>{CoupleState.minutes}</h3>
             <p>Minutes</p>
+          </div>
+          <div className="countdown-box">
+            <h3>{CoupleState.seconds}</h3>
+            <p>Seconds</p>
           </div>
         </div>
         <div className="couple-rsvp">

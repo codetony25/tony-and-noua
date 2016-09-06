@@ -16,12 +16,10 @@ class HeaderLayoutState {
 
   attachWindow = () => {
     window.addEventListener('scroll', this.handleScroll);
-    document.body.addEventListener('click', this.handleBodyClick);
   };
 
   removeWindow = () => {
     window.removeEventListener('scroll', this.handleScroll);
-    document.body.removeEventListener('click', this.handleBodyClick);
   };
 
   handleScroll = () => {
@@ -51,13 +49,10 @@ class HeaderLayoutState {
     this.handleToggleMobileNavigation();
   };
 
-  handleBodyClick = (event) => {
-    console.log('here');
+  onMobileOverlayClick = (event) => {
     event.preventDefault();
 
-    if (isMobileNavigationShown) {
-      this.handleToggleMobileNavigation();
-    }
+    this.handleToggleMobileNavigation();
   };
 
   handleToggleMobileNavigation = () => {
