@@ -7,7 +7,11 @@ const FooterLayoutStyle = () => {
   return {
     '.footer-container': {
       background: footerColor.bg,
-      padding: '99px 30px',
+      padding: '99px 5px',
+
+      [mediaQuery.small]: {
+        padding: '99px 30px',
+      },
 
       '.footer-thanks': {
         textAlign: 'center',
@@ -46,7 +50,10 @@ const FooterLayoutStyle = () => {
         alignContent: 'center',
         justifyContent: 'space-between',
         margin: '50px auto',
-        width: 268,
+
+        [mediaQuery.small]: {
+          width: 268
+        },
 
         'i': {
           color: footerColor.icon,
@@ -70,6 +77,11 @@ const FooterLayoutStyle = () => {
           color: footerColor.textPhone,
           justifyContent: 'space-between',
           alignItems: 'center',
+          flexDirection: 'column',
+
+          [mediaQuery.small]: {
+            flexDirection: 'row',
+          }
         }
       },
 

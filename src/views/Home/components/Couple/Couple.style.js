@@ -161,6 +161,7 @@ const CoupleStyle = () => {
       justifyContent: 'space-between',
       margin: '60px auto',
       maxWidth: 376,
+      flexWrap: 'wrap',
 
       '.countdown-box': {
         display: 'flex',
