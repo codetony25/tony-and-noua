@@ -16,7 +16,7 @@ class Location extends React.Component {
         <TitleBlock
           section="Our Wedding Information"
           title="Wedding Event Location"
-          description="Lorem ipsum dolor sit amet, cons tricies vestibulum vebibendum et condime ectetur adipisc elit. Proin ultricies vestibulum vebibendum et condim"
+          description="Tony and Noua's Venue and Time"
         />
         <Element name="rsvp" className="location-wrapper">
           <div className="location-image">
