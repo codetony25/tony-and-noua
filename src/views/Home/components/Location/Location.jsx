@@ -25,14 +25,14 @@ class Location extends React.Component {
           <div className="location-details">
             <h5>Come Join Us</h5>
             <h2>Where and When</h2>
-            <p>The ceremony will be held on Saturday, January 12, 2015 at Manalia Tower Floor 24 Room 256, Anfix Street ST01. It will start at Five O'Clock in the evenings.</p>
-            <p>A celebration with dinner and dancing will follow at Forine Restaurant, Rose Street ST08. Check the map.</p>
+            <p>The ceremony will be held on Saturday, June 17, 2017 at Manalia Tower Floor 24 Room 256, Anfix Street ST01. It will start at Five O'Clock in the evenings.</p>
+            <p>A celebration with dinner and dancing will follow at the venue, Check the map.</p>
             <div className="location-summary">
               <div className="summary-first">
                 <div className="summary-icon">
                   <i className="fa fa-paper-plane" />
                 </div>
-                <p>January 12, 2015</p>
+                <p>June 17, 2017</p>
               </div>
               <div className="summary-second">
                 <div className="summary-icon">
