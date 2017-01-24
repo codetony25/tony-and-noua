@@ -19,7 +19,7 @@ class Couple extends React.Component {
           <div className="couple-first">
             <div className="couple-description">
               <h3>Tony Nguyen</h3>
-              <p>Lorem Ipsumimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
+              <p>You are the reason why I work hard everyday. Cannot wait to grow very old with you.</p>
             </div>
             <div className="couple-first-image">
               <img src='/assets/views/Home/couple-first.png' alt="" />
@@ -34,30 +34,16 @@ class Couple extends React.Component {
             </div>
             <div className="couple-description">
               <h3>Noua Vue</h3>
-              <p>Lorem Ipsuimu is simply dummy text of the  pesetting industry. Lorem Ipsum has been the industry's standard</p>
+              <p>My love for you will forever grow and never get old. I am definately one of the luckiest souls on Earth to be marrying you.</p>
             </div>
           </div>
         </div>
-        {/*<div className="couple-countdown">*/}
-          {/*<div className="countdown-box">*/}
-            {/*<h3>{CoupleState.days}</h3>*/}
-            {/*<p>Days</p>*/}
-          {/*</div>*/}
-          {/*<div className="countdown-box">*/}
-            {/*<h3>{CoupleState.hours}</h3>*/}
-            {/*<p>Hours</p>*/}
-          {/*</div>*/}
-          {/*<div className="countdown-box">*/}
-            {/*<h3>{CoupleState.minutes}</h3>*/}
-            {/*<p>Minutes</p>*/}
-          {/*</div>*/}
-          {/*<div className="countdown-box">*/}
-            {/*<h3>{CoupleState.seconds}</h3>*/}
-            {/*<p>Seconds</p>*/}
-          {/*</div>*/}
-        {/*</div>*/}
         <div className="couple-rsvp">
-          <button className="btn btn-primary btn-rounded">Save The Date</button>
+          <a href="http://add.eventable.com/events/58871ae8e25dee001a6ab3b4/58871aeae1989d0016055ae2/" className="eventable-link" target="_blank" data-key="58871ae8e25dee001a6ab3b4" data-event="58871aeae1989d0016055ae2" data-style="1">
+            <button className="btn btn-primary btn-rounded">
+              Save The Date
+            </button>
+          </a>
         </div>
       </Element>
     );

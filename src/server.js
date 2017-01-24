@@ -52,7 +52,7 @@ function Html({ title, description, style, script, children }) {
     <script
       dangerouslySetInnerHTML={{ __html:
       'window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;' +
-      `ga('create','${analytics.google.trackingId}','auto');ga('send','pageview')` }}
+      `ga('create','${analytics.google.trackingId}','auto');ga('send','pageview')!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://plugins.eventable.com/eventable.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'eventable-script');` }}
     />
     }
     {analytics.google.trackingId &&

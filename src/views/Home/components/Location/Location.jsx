@@ -23,10 +23,10 @@ class Location extends React.Component {
             <img src='/assets/views/Home/tonyandnoua.png' alt=""/>
           </div>
           <div className="location-details">
-            <h5>Come Join Us</h5>
-            <h2>Where and When</h2>
-            <p>The ceremony will be held on Saturday, June 17, 2017 at Manalia Tower Floor 24 Room 256, Anfix Street ST01. It will start at Five O'Clock in the evenings.</p>
-            <p>A celebration with dinner and dancing will follow at the venue, Check the map.</p>
+            <h5>Join Us</h5>
+            <h2>When and Where</h2>
+            <p>The ceremony will be held on Saturday, June 17, 2017 at <strong>Luxory Manor - 20711 East Mesarica Road, Covina, CA 91724</strong>. It will start at Twelve O'Clock in the afternoon.</p>
+            <p>A celebration with dinner and dancing will follow at the venue. Please RSVP with First and Last name by May 30.</p>
             <div className="location-summary">
               <div className="summary-first">
                 <div className="summary-icon">
@@ -38,23 +38,23 @@ class Location extends React.Component {
                 <div className="summary-icon">
                   <i className="fa fa-paper-plane" />
                 </div>
-                <p>Floor 24, Room 256</p>
-              </div>
-              <div className="summary-third">
-                <div className="summary-icon">
-                  <i className="fa fa-paper-plane" />
-                </div>
-                <p>Manalia Tower</p>
+                <p>Luxory Manor</p>
               </div>
               <div className="summary-fourth">
                 <div className="summary-icon">
                   <i className="fa fa-paper-plane" />
                 </div>
-                <p>Anfix Street STO1</p>
+                <p>12:00 PM</p>
               </div>
             </div>
             <div className="location-rsvp">
-              <button className="btn btn-secondary btn-rounded">RSVP</button>
+              <a
+                href="mailto:codetony25@gmail.com"
+              >
+                <button className="btn btn-secondary btn-rounded">
+                  RSVP
+                </button>
+              </a>
             </div>
           </div>
         </Element>
