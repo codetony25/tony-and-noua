@@ -5,7 +5,7 @@ const HeroStyle = () => {
   return {
     '.hero-container': {
       position: 'relative',
-      background: `url(/assets/views/Home/proposal.png) center center no-repeat`,
+      background: `url(/assets/views/Home/proposal.gif) center center no-repeat`,
       backgroundAttachment: 'fixed',
       backgroundSize: 'cover',
       height: '100vh',
