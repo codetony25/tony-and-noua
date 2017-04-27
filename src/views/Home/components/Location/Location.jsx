@@ -48,9 +48,7 @@ class Location extends React.Component {
               </div>
             </div>
             <div className="location-rsvp">
-              <a
-                href="mailto:codetony25@gmail.com"
-              >
+              <a href="mailto:nouavue@gmail.com">
                 <button className="btn btn-secondary btn-rounded">
                   RSVP
                 </button>
