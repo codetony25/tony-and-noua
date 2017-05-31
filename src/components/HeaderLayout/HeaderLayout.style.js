@@ -101,7 +101,7 @@ const HeaderLayoutStyle = (options) => {
           position: 'absolute',
           background: headerColor.bg,
           width: '100%',
-          top: 0,
+          top: -2,
           left: 0,
           zIndex: -50,
           fontSize: 32,

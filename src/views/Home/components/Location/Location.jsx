@@ -25,36 +25,35 @@ class Location extends React.Component {
           <div className="location-details">
             <h5>Join Us</h5>
             <h2>When and Where</h2>
-            <p>To Be Announced...</p>
-            {/*<p>The ceremony will be held on Saturday, June 17, 2017 at <strong>Luxory Manor - 20711 East Mesarica Road, Covina, CA 91724</strong>. It will start at Twelve O'Clock in the afternoon.</p>*/}
-            {/*<p>A celebration with dinner and dancing will follow at the venue. Please RSVP with First and Last name by May 30.</p>*/}
-            {/*<div className="location-summary">*/}
-              {/*<div className="summary-first">*/}
-                {/*<div className="summary-icon">*/}
-                  {/*<i className="fa fa-paper-plane" />*/}
-                {/*</div>*/}
-                {/*<p>June 17, 2017</p>*/}
-              {/*</div>*/}
-              {/*<div className="summary-second">*/}
-                {/*<div className="summary-icon">*/}
-                  {/*<i className="fa fa-paper-plane" />*/}
-                {/*</div>*/}
-                {/*<p>Luxory Manor</p>*/}
-              {/*</div>*/}
-              {/*<div className="summary-fourth">*/}
-                {/*<div className="summary-icon">*/}
-                  {/*<i className="fa fa-paper-plane" />*/}
-                {/*</div>*/}
-                {/*<p>12:00 PM</p>*/}
-              {/*</div>*/}
-            {/*</div>*/}
-            {/*<div className="location-rsvp">*/}
-              {/*<a href="mailto:nouavue@gmail.com">*/}
-                {/*<button className="btn btn-secondary btn-rounded">*/}
-                  {/*RSVP*/}
-                {/*</button>*/}
-              {/*</a>*/}
-            {/*</div>*/}
+            <p>The ceremony will be held on Saturday, June 17, 2017 at <br /><br /><strong>Yorba Linda Mansion - 4490 Ohio Street, Yorba Linda, CA 92886, United States</strong><br /><br /> It will start at <strong>Twelve O'Clock</strong> in the afternoon.</p>
+            <p>A celebration with dinner and dancing will follow at the venue. Please RSVP with First and Last name by June 12. Click RSVP below if you plan on attending</p>
+            <div className="location-summary">
+              <div className="summary-first">
+                <div className="summary-icon">
+                  <i className="fa fa-paper-plane" />
+                </div>
+                <p>June 17, 2017</p>
+              </div>
+              <div className="summary-second">
+                <div className="summary-icon">
+                  <i className="fa fa-paper-plane" />
+                </div>
+                <p>Yorba Linda Mansion</p>
+              </div>
+              <div className="summary-fourth">
+                <div className="summary-icon">
+                  <i className="fa fa-paper-plane" />
+                </div>
+                <p>12:00 PM</p>
+              </div>
+            </div>
+            <div className="location-rsvp">
+              <a href="mailto:nouavue@gmail.com">
+                <button className="btn btn-secondary btn-rounded">
+                  RSVP
+                </button>
+              </a>
+            </div>
           </div>
         </Element>
       </Element>

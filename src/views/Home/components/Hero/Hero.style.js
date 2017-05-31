@@ -11,6 +11,7 @@ const HeroStyle = () => {
       height: '100vh',
       display: 'flex',
       justifyContent: 'center',
+      paddingTop: 60,
       alignItems: 'center',
 
       ':after': {
