@@ -48,7 +48,7 @@ class Location extends React.Component {
               </div>
             </div>
             <div className="location-rsvp">
-              <a href="mailto:nouavue@gmail.com">
+              <a href="mailto:nouavue@gmail.com?subject=Tony%20and%20Noua%20Wedding%20Reservation%20(RSVP)%20Request!&body=Please%20email%20us%20who%20is%20planning%20on%20attending%20Tony%20and%20Noua's%20wedding%20and%20if%20you%20are%20planning%20on%20bringing%20more%20guests%20(+1's)%20below%20(examples%20provided,%20please%20change%20names,%20guests,%20and%20notes.):%0D%0A%0D%0A%20Name:%0D%0A-%20John%20Smith%0D%0A%0D%0A%20More%20Guests:%0D%0A-%20Max%20Power%0D%0A-%20Britney%20Spears%0D%0A%0D%0AAdditional%20Notes:%0D%0A-%20Can't%20wait%20to%20see%20Tony%20and%20Noua%20get%20married%20on%20June%2017th!%20:)">
                 <button className="btn btn-secondary btn-rounded">
                   RSVP
                 </button>
