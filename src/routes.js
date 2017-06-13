@@ -21,7 +21,9 @@ export default {
     const component = await next();
     if (component === undefined) return component;
     return render(
-      <Layout context={context}>{component}</Layout>
+      <Layout context={context}>
+        {component}
+      </Layout>
     );
   },
 

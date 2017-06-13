@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { Style } from 'jassy';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import initalCss from './styles/vendors/Inital.css';
 
@@ -50,13 +51,15 @@ class Layout extends Component {
     return !this.props.error ? (
       <div>
         <Style rules={GlobalState.styles} />
-        <div className="main-container">
-          <HeaderLayout />
-          <div className="view-container">
-            {this.props.children}
+        <MuiThemeProvider>
+          <div className="main-container">
+            <HeaderLayout />
+            <div className="view-container">
+              {this.props.children}
+            </div>
+            <FooterLayout />
           </div>
-          <FooterLayout />
-        </div>
+        </MuiThemeProvider>
       </div>
     ) : this.props.children;
   }
