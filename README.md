@@ -1,1 +1,1 @@
-# Tony and Noua's website made with React.
+# Tony and Noua's website made with React
