@@ -22,6 +22,7 @@
     "jassy": "^0.2.7",
     "jsonwebtoken": "7.1.9",
     "markdown-it": "7.0.1",
+    "material-ui": "^0.20.2",
     "mobx": "^2.5.1",
     "mobx-react": "^3.5.5",
     "node-fetch": "1.6.0",
@@ -180,7 +181,7 @@
     "build:prod": "./node_modules/.bin/babel-node tools/run build -- --release",
     "deploy": "./node_modules/.bin/babel-node tools/run deploy",
     "render": "./node_modules/.bin/babel-node tools/run render",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm i sqlite3 -S && npm run build",
     "start": "node build/server.js"
   }
 }
