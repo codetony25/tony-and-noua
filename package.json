@@ -184,6 +184,6 @@
     "build:prod": "./node_modules/.bin/babel-node tools/run build -- --release",
     "deploy": "./node_modules/.bin/babel-node tools/run deploy",
     "render": "./node_modules/.bin/babel-node tools/run render",
-    "start": "node build/server.js"
+    "start": "npm run build && node build/server.js"
   }
 }
