@@ -188,7 +188,7 @@
     "clean": "./node_modules/.bin/babel-node tools/run clean",
     "copy": "./node_modules/.bin/babel-node tools/run copy",
     "bundle": "./node_modules/.bin/babel-node tools/run bundle",
-    "build": "./node_modules/.bin/babel-node tools/run build",
+    "build": "npm run clean && ./node_modules/.bin/babel-node tools/run build",
     "deploy": "./node_modules/.bin/babel-node tools/run deploy",
     "render": "./node_modules/.bin/babel-node tools/run render",
     "start": "./node_modules/.bin/babel-node tools/run start"
