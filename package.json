@@ -180,6 +180,7 @@
     "build:prod": "./node_modules/.bin/babel-node tools/run build -- --release",
     "deploy": "./node_modules/.bin/babel-node tools/run deploy",
     "render": "./node_modules/.bin/babel-node tools/run render",
-    "start": "npm i && node build/server.js"
+    "heroku-postbuild": "npm run build",
+    "start": "node build/server.js"
   }
 }
