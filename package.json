@@ -177,13 +177,13 @@
     "lint": "npm run eslint && npm run stylelint",
     "test": "mocha \"src/**/*.test.js\" --require test/setup.js --compilers js:babel-register",
     "test:watch": "npm run test -- --reporter min --watch",
-    "clean": "babel-node tools/run clean",
-    "copy": "babel-node tools/run copy",
-    "bundle": "babel-node tools/run bundle",
-    "build": "babel-node tools/run build",
-    "build:prod": "babel-node tools/run build -- --release",
-    "deploy": "babel-node tools/run deploy",
-    "render": "babel-node tools/run render",
-    "start": "babel-node tools/run start"
+    "clean": "./node_modules/.bin/babel-node tools/run clean",
+    "copy": "./node_modules/.bin/babel-node tools/run copy",
+    "bundle": "./node_modules/.bin/babel-node tools/run bundle",
+    "build": "./node_modules/.bin/babel-node tools/run build",
+    "build:prod": "./node_modules/.bin/babel-node tools/run build -- --release",
+    "deploy": "./node_modules/.bin/babel-node tools/run deploy",
+    "render": "./node_modules/.bin/babel-node tools/run render",
+    "start": "./node_modules/.bin/babel-node tools/run start"
   }
 }
