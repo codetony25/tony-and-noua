@@ -1,9 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "node": ">=5.0 <7",
-    "npm": ">=3.3 <4"
-  },
   "dependencies": {
     "babel-polyfill": "6.13.0",
     "babel-runtime": "6.11.6",
@@ -184,6 +180,6 @@
     "build:prod": "./node_modules/.bin/babel-node tools/run build -- --release",
     "deploy": "./node_modules/.bin/babel-node tools/run deploy",
     "render": "./node_modules/.bin/babel-node tools/run render",
-    "start": "npm run build && node build/server.js"
+    "start": "node build/server.js"
   }
 }
