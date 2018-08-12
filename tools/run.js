@@ -33,4 +33,4 @@ if (require.main === module && process.argv.length > 2) {
   run(module).catch(err => { console.error(err.stack); process.exit(1); });
 }
 
-export default run;
+module.exports = run;
