@@ -1,35 +1,29 @@
-import React from 'react';
-import { Style } from 'jassy';
+import React from "react";
+import { Style } from "jassy";
 
-import FooterLayoutState from './FooterLayout.state'
+import FooterLayoutState from "./FooterLayout.state";
 
 class FooterLayout extends React.Component {
+  static displayName = "FooterLayout";
 
-  static displayName = 'FooterLayout';
-
-  render () {
-    return(
+  render() {
+    return (
       <footer className="footer-container">
         <Style rules={FooterLayoutState.styles} />
         <div className="footer-thanks">
           <img src="/assets/images/thank-you.png" alt="" />
         </div>
         <div className="footer-names">
-          <h1>Tony <span>&</span> Noua</h1>
+          <h1>
+            Tony <span>&</span> Noua
+          </h1>
         </div>
         <div className="footer-divider">
-          <img src="/assets/images/swirl-left-white.png" alt=""/>
+          <img src="/assets/images/swirl-left-white.png" alt="" />
           <div className="divider-icon">
             <i className="fa fa-heart" />
           </div>
           <img src="/assets/images/swirl-right-white.png" alt="" />
-        </div>
-        <div className="footer-phone-number">
-          <p>
-            <span>626-552-2609</span>
-            <span>|</span>
-            <span>714-318-3971</span>
-          </p>
         </div>
         <div className="footer-social">
           <a href="mailto:codetony25@gmail.com">
@@ -54,12 +48,13 @@ class FooterLayout extends React.Component {
           </a>
         </div>
         <div className="footer-copyright">
-          <p>Copyright All Rights Reserved 2016 - <a href="#">Tony Tai Nguyen</a></p>
+          <p>
+            Copyright All Rights Reserved 2019 - <a href="#">Tony Tai Nguyen</a>
+          </p>
         </div>
       </footer>
     );
   }
-
 }
 
 export default FooterLayout;
