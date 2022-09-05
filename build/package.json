@@ -1,5 +1,8 @@
 {
   "private": true,
+  "engines": {
+    "node": "=8.12.9"
+  },
   "dependencies": {
     "babel-polyfill": "6.13.0",
     "babel-runtime": "6.11.6",
